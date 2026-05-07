@@ -20,17 +20,24 @@
     }
     section{
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
         padding: 3rem 0;
     }
+    section > *{
+        width: 90%;
+    }
     section p, h1{
-        width:100%;
-        margin-left: 1rem;
     }
     h1{
         font-size: 1.6rem;
+    }
+    @media (min-width: 500px) {
+        section{
+            
+        }
     }
 </style>

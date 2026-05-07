@@ -1,0 +1,45 @@
+---
+import Card from "./Card.astro";
+---
+
+<section>
+    <Card 
+    title="Example Title"
+    description="This is an example description"
+    image="/RML_Astro_Website/h1.jpg"
+    alt="Service"
+    buttonText="Learn More"
+    buttonLink="/"
+    />
+    <Card 
+    title="Example Title"
+    description="This is an example description"
+    image="/RML_Astro_Website/h1.jpg"
+    alt="Service"
+    buttonText="Learn More"
+    buttonLink="/"
+    />
+    <Card 
+    title="Example Title"
+    description="This is an example description"
+    image="/RML_Astro_Website/h1.jpg"
+    alt="Service"
+    buttonText="Learn More"
+    buttonLink="/"
+    />
+</section>
+
+<style>
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    @media (min-width: 900) {
+        section{
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+</style>
