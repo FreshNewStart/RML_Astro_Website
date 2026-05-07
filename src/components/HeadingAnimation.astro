@@ -1,0 +1,74 @@
+<section class="animation">
+  <div class="first"><div>General Maintenance</div></div>
+  <div class="second"><div>Cleaning</div></div>
+  <div class="third"><div>Pest-control & Fumigation</div></div>
+</section>
+
+<style>
+.animation {
+  height: 2.5rem;
+  overflow: hidden;
+  margin-top: -.5rem;
+  margin-left: 4rem;
+}
+
+.animation > div > div {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+}
+
+/* Animate the whole stack */
+.animation > div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div,
+.second div,
+.third div {
+  font-size: 2rem;
+  color: aliceblue;
+  font-weight: 700;
+  padding: 0rem;
+  border-radius: .2rem;
+  text-shadow: 1px 1px 5px black;
+}
+.first div{
+  color: gold;
+}
+.second div{
+  color: rgb(104, 182, 255);
+}
+.third div{
+  color: rgb(0, 255, 157);
+}
+/* 2.5rem movement per item */
+@keyframes text-animation {
+  0%, 15% {
+    margin-top: 0;
+  }
+
+  33%, 48% {
+    margin-top: -2.5rem;
+  }
+
+  66%, 81% {
+    margin-top: -5rem;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+@media (max-width:880px) {
+  .animation{
+    width: 100%;
+    margin: 0rem 0 -.2rem 0 ;
+  }
+  .first div,
+  .second div,
+  .third div {
+    font-size: 1.6rem;
+  }
+}
+</style>

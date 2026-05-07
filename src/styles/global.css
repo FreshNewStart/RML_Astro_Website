@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: Montserrat;
+		text-decoration: none;
+		list-style: none;
+	}
+	h1{
+		color: rgba(255, 255, 255, 0.747);
+		text-shadow: 1px 1px 5px black;
+	}
+	p{
+		font-size: medium;
+		color: rgb(184, 184, 184);
+		text-shadow: 1px 1px 5px black;
+	}
+	.button{
+		padding: .5rem 1rem;
+		background-image: url(/public/RML-Logo1.PNG);
+		text-decoration: none;
+		color: rgb(255, 245, 191);
+		font-weight: 500;
+		border-radius: 10px;
+		box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+		text-shadow: 1px 1px 3px black;
+        text-wrap: nowrap;
+	}
+	@media (max-width: 880px) {
+		h1{
+			font-size: larger;
+		}
+		p{
+			font-size: small;
+		}
+		.button{
+			font-size: small;
+			padding: .3rem .7rem;
+			border-radius: 5px;
+		}
+	}
