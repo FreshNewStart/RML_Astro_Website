@@ -8,7 +8,7 @@ import HeadingAnimation from "./HeadingAnimation.astro"
         <h1>Services Provider in PNG</h1>
 
         <p>
-            Raballam Maintenance Ltd delivers professional plumbing, electrical, air conditioning, and general maintenance solutions for residential, commercial, and industrial clients.
+            Raballam Maintenance Ltd delivers professional Maintenance, Cleaning, Pest Control and Fumigation services for residential, commercial, and industrial clients.
         </p>
         <div class="cta-container">
             <a href="" class="button">Request Quote</a>
@@ -18,7 +18,7 @@ import HeadingAnimation from "./HeadingAnimation.astro"
 <style>
     
 .hero-section{
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     background-image: url(/h1.jpg);
     background-position: top left;
@@ -29,12 +29,10 @@ import HeadingAnimation from "./HeadingAnimation.astro"
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    padding: 4rem;
 }
 .hero-section > *{
     width: 35%;
-    margin-left: 4rem;
     margin-bottom: 1rem;
 }
 .hero-section .cta-container{
@@ -49,12 +47,13 @@ import HeadingAnimation from "./HeadingAnimation.astro"
 @media (max-width: 880px) {
     .hero-section {
         background-image: url(/h2.jpg);
-        background-position: top;
+        background-position: top left;
         justify-content: flex-start;
         padding: 7rem 2rem 0 2rem;
     }
     .hero-section > *{
-        width: fit-content;
+        width: 100%;
+        max-width: 290px;
         margin: 0%;
     }
 }

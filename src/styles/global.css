@@ -6,13 +6,16 @@
 		text-decoration: none;
 		list-style: none;
 	}
+	body, html{
+		overflow-x: hidden;
+	}
 	h1{
 		color: rgba(255, 255, 255, 0.747);
 		text-shadow: 1px 1px 5px black;
 	}
 	p{
 		font-size: medium;
-		color: rgb(184, 184, 184);
+		color: rgb(224, 224, 224);
 		text-shadow: 1px 1px 5px black;
 	}
 	.button{
