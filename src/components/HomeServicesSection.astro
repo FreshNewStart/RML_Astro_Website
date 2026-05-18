@@ -3,43 +3,99 @@ import Card from "./Card.astro";
 ---
 
 <section>
+    <div class="text-container">
+        <h1>What We Offer</h1>
+        <p>
+            Raballam Maintenance Limited (RML) provides a comprehensive range of professional services designed to support the operational, structural, and environmental needs of our clients from project commencement through to completion and ongoing maintenance.
+        </p>
+    </div> 
+    <div class="container">
     <Card 
-    title="Example Title"
-    description="This is an example description"
-    image="/RML_Astro_Website/h1.jpg"
+    title="General Maintenance"
+    description="Reliable day-to-day and preventative maintenance services to ensure facilities remain safe, functional, and well maintained.
+Services include: plumbing, electrical maintenance, carpentry, painting, air conditioning servicing, and general facility upkeep."
+    image="/RML_Astro_Website/s1.jpg"
     alt="Service"
     buttonText="Learn More"
     buttonLink="/"
     />
     <Card 
-    title="Example Title"
-    description="This is an example description"
-    image="/RML_Astro_Website/h1.jpg"
+    title="Construction"
+    description="Professional construction solutions for residential, commercial, and industrial projects delivered with a focus on quality, compliance, and efficiency.
+Services include: building works, office and facility fit-outs, renovations, extensions, and structural development."
+    image="/RML_Astro_Website/s5.jpg"
     alt="Service"
     buttonText="Learn More"
     buttonLink="/"
     />
     <Card 
-    title="Example Title"
-    description="This is an example description"
-    image="/RML_Astro_Website/h1.jpg"
+    title="Cleaning"
+    description="Comprehensive cleaning solutions tailored to maintain hygienic, safe, and professional environments across various facilities.
+Services include: commercial cleaning, deep cleaning, sanitation services, exterior cleaning, and post-construction cleaning."
+    image="/RML_Astro_Website/s2.jpg"
     alt="Service"
     buttonText="Learn More"
     buttonLink="/"
     />
+    <Card 
+    title="Pest Control & Fumigation"
+    description="Safe and effective pest management services designed to protect both property and occupants while maintaining health and hygiene standards.
+Services include: termite treatment, general pest control, scheduled inspections, fumigation, and preventative pest management programs."
+    image="/RML_Astro_Website/s3.jpg"
+    alt="Service"
+    buttonText="Learn More"
+    buttonLink="/"
+    />
+    </div>
 </section>
 
 <style>
-    section{
+    h1{
+        text-shadow: none;
+        font-size: 1.6rem;
+        width: 90%;
+        text-align: left;
+        color: white;
+    }
+    .container{
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 1rem;
     }
-    @media (min-width: 900) {
-        section{
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.93);
+    border-radius: 12px;
+    padding: 1.5rem 0;
+    }
+    @media (min-width: 1200px) {
+        .text-container{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0;
+            gap: 1rem;
+        }
+        .container{
+            width: 75%;
             flex-direction: row;
             flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        .text-container p{
+            width: 60%;
         }
     }
 </style>
